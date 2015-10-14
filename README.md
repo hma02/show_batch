@@ -6,13 +6,13 @@ visualize batch images along with corresponding labels and discription for debug
 
 # example usage:
 
-    from show_batch import show_batch_part
+    import show_batch_part
     batch_size=256
     
-    # batch_img should be in c01b shape
+    # batch_img should be in c01b shape, replace your batch numpy array here
     batch_img = np.zeros(shape=(3,256,256,batch_size))   
     
-    # batch_label is 1-d array, batch_size long
+    # batch_label is 1-d array, batch_size long, replace your label numpy array here
     batch_label = np.zeros(shape=(batch_size,)) 
     
     label_dict = np.load('./label_dict.npy').tolist()
