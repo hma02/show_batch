@@ -7,6 +7,8 @@ visualize batch images along with corresponding labels and discription for debug
 # example usage:
 
     import show_batch_part
+    
+    # batch_size is chosen according to your data, for example we use 256 here
     batch_size=256
     
     # batch_img should be in c01b shape, replace your batch numpy array here
